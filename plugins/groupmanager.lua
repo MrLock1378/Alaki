@@ -321,17 +321,17 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *group owner*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از قبل صاحب گروه بود*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #صاحب گروه بود✓*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is now the_ *group owner*", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴡ ᴛʜᴇ_ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡✓", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *به مقام صاحب گروه منتصب شد*", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *#باموفقیت بہ مقام صاحب گروه منتصب شد ✓*", 0, "md")
    end
 end
 tdcli_function ({
@@ -351,17 +351,17 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already a_ *moderator*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡✓", 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از قبل مدیر گروه بود*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* از قبل مُدیر گروه بود ✓", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been_ *promoted*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡ᴘʀᴏᴍᴏᴛᴇᴅ﹡✓", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *به مقام مدیر گروه منتصب شد*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *به مقام مدیر گروه #منتصب شد✓*", 0, "md")
    end
 end
 tdcli_function ({
@@ -381,17 +381,17 @@ user_name = check_markdown(data.first_name_)
 end
 if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *group owner*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* *از قبل صاحب گروه نبود*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #صاحب گروه نبود✓*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is no longer a_ *group owner*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏ ʟᴏɴɢᴇʀ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از مقام صاحب گروه برکنار شد*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام #صاحب گروه برکنار شد ✓*", 0, "md")
    end
 end
 tdcli_function ({
@@ -409,17 +409,17 @@ user_name = check_markdown(data.first_name_)
 end
 if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is not a_ *moderator*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از قبل مدیر گروه نبود*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #مدیر گروه نبود✓*", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been_ *demoted*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡ᴅᴇᴍᴏᴛᴇᴅ﹡", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از مقام مدیر گروه برکنار شد*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام #مدیر گروه برکنار شد ✓*", 0, "md")
    end
 end
 tdcli_function ({
@@ -427,7 +427,7 @@ tdcli_function ({
     user_id_ = data.sender_user_id_
   }, demote_cb, {chat_id=data.chat_id_,user_id=data.sender_user_id_})
   end
-    if cmd == "id" then
+    if cmd == "me" then
 local function id_cb(arg, data)
     return tdcli.sendMessage(arg.chat_id, "", 0, "*"..data.id_.."*", 0, "md")
 end
@@ -438,9 +438,9 @@ tdcli_function ({
   end
 else
     if lang then
-  return tdcli.sendMessage(data.chat_id_, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(data.chat_id_, "", 0, "_←کاربر یافت نشد✘_", 0, "md")
    else
-  return tdcli.sendMessage(data.chat_id_, "", 0, "*User Not Found*", 0, "md")
+  return tdcli.sendMessage(data.chat_id_, "", 0, "→﹡Usᴇʀ Nᴏᴛ Fᴏᴜɴᴅ﹡✘", 0, "md")
       end
    end
 end
@@ -568,7 +568,7 @@ administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* *از مقام مدیر گروه برکنار شد*", 0, "md")
    end
 end
-   if cmd == "id" then
+   if cmd == "me" then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*"..data.id_.."*", 0, "md")
 end
     if cmd == "res" then
