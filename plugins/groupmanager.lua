@@ -351,7 +351,7 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡✓", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡✓", 0, "md")
 else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* از قبل مُدیر گروه بود ✓", 0, "md")
       end
@@ -359,7 +359,7 @@ else
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡ᴘʀᴏᴍᴏᴛᴇᴅ﹡✓", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ʜᴀs ʙᴇᴇɴ ﹡ᴘʀᴏᴍᴏᴛᴇᴅ﹡✓", 0, "md")
    else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *به مقام مدیر گروه #منتصب شد✓*", 0, "md")
    end
@@ -381,7 +381,7 @@ user_name = check_markdown(data.first_name_)
 end
 if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ɪs ɴᴏᴛ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
    else
 return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #صاحب گروه نبود✓*", 0, "md")
       end
@@ -389,7 +389,7 @@ return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏ ʟᴏɴɢᴇʀ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ɪs ɴᴏ ʟᴏɴɢᴇʀ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡", 0, "md")
     else
 return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام #صاحب گروه برکنار شد ✓*", 0, "md")
    end
@@ -409,7 +409,7 @@ user_name = check_markdown(data.first_name_)
 end
 if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."*  _ɪs ɴᴏᴛ ᴀ ﹡ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡", 0, "md")
     else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #مدیر گروه نبود✓*", 0, "md")
    end
@@ -417,7 +417,7 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡ᴅᴇᴍᴏᴛᴇᴅ﹡", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡ᴅᴇᴍᴏᴛᴇᴅ﹡", 0, "md")
    else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام #مدیر گروه برکنار شد ✓*", 0, "md")
    end
@@ -523,7 +523,7 @@ end
   if cmd == "promote" then
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡ ✓", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡ ✓", 0, "md")
 else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #مُدیر گروه بود ✓*", 0, "md")
       end
@@ -555,7 +555,7 @@ end
    if cmd == "demote" then
 if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ_ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡ ✓", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_ →Usᴇʀ_ "..user_name.." *"..data.id_.."* _ ɪs ɴᴏᴛ ᴀ_ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡ ✓", 0, "md")
     else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* از قبل مُدیر گروه #نبود✓", 0, "md")
    end
@@ -573,13 +573,13 @@ end
 end
     if cmd == "res" then
     if not lang then
-     text = "Result for [ "..check_markdown(data.type_.user_.username_).." ] :\n"
+     text = "Rᴇsᴜʟᴛ ғᴏʀ [ "..check_markdown(data.type_.user_.username_).." ] :\n"
     .. ""..check_markdown(data.title_).."\n"
     .. " ["..data.id_.."]"
   else
-     text = "اطلاعات برای [ "..check_markdown(data.type_.user_.username_).." ] :\n"
-    .. "".. check_markdown(data.title_) .."\n"
-    .. " [".. data.id_ .."]"
+     text = " ▪️←اطلاعات کاربر← [ @"..check_markdown(data.type_.user_.username_).." ] :\n"
+    .. "▫️←نام کاربر←".. check_markdown(data.title_) .."\n"
+    .. "▪️←شناسه کاربر← [`".. data.id_ .."`]"
          end
        return tdcli.sendMessage(arg.chat_id, 0, 1, text, 1, 'md')
    end
@@ -655,7 +655,7 @@ end
   if cmd == "setowner" then
   if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." "..data.id_.." _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡ ✓", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." "..data.id_.." _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ ﹡#ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡ ✓", 0, "md")
    else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." "..data.id_.."از قبل #صاحب گروه بود ✓", 0, "md")
       end
@@ -663,57 +663,57 @@ end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _is now the_ *group owner*", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴡ ᴛʜᴇ ﹡#ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡ ✓", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *به مقام صاحب گروه منتصب شد*", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *#باموفقیت بہ مقام صاحب گروه منتصب شد ✓*", 0, "md")
    end
 end
   if cmd == "promote" then
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _is already a_ *moderator*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ᴀʟʀᴇᴀᴅʏ ᴀ_ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡✓", 0, "md")
 else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل مدیر گروه بود*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل مُدیر گروه بود ✓*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _has been_ *promoted*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ ﹡#ᴘʀᴏᴍᴏᴛᴇᴅ﹡ ✓", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *به مقام مدیر گروه منتصب شد*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *#باموفقیت بہ مقام مدیر گروه منتصب شد ✓*", 0, "md")
    end
 end
    if cmd == "remowner" then
 if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _is not a_ *group owner*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ_ ﹡#ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡✓", 0, "md")
    else
-return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل صاحب گروه نبود*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل #صاحب گروه نبود✓*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _is no longer a_ *group owner*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏ ʟᴏɴɢᴇʀ ᴀ_ ﹡#ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ﹡✓", 0, "md")
     else
-return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام صاحب گروه برکنار شد*", 0, "md")
+return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام #صاحب گروه #باموفقیت برکنار شد✓*", 0, "md")
    end
 end
    if cmd == "demote" then
 if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _is not a_ *moderator*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ɪs ɴᴏᴛ ᴀ_ ﹡#ᴍᴏᴅᴇʀᴀᴛᴏʀ﹡✓", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل مدیر گروه نبود*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از قبل مُدیر گروه #نبود✓*", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _has been_ *demoted*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ_ "..user_name.." *"..data.id_.."* _ʜᴀs ʙᴇᴇɴ_ ﹡#ᴅᴇᴍᴏᴛᴇᴅ﹡", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام مدیر گروه برکنار شد*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر_ "..user_name.." *"..data.id_.."* *از مقام مُدیر گروه #باموفقیت برکنار شُد✓*", 0, "md")
    end
 end
     if cmd == "whois" then
@@ -727,23 +727,23 @@ username = 'ندارد'
   end
 end
      if not lang then
-       return tdcli.sendMessage(arg.chat_id, 0, 1, 'Info for [ '..data.id_..' ] :\nUserName : '..username..'\nName : '..data.first_name_, 1)
+       return tdcli.sendMessage(arg.chat_id, 0, 1, '▪️Info for [ '..data.id_..' ] :\n▫️UserName : '..username..'\n▪️Name : '..data.first_name_, 1)
    else
-       return tdcli.sendMessage(arg.chat_id, 0, 1, 'اطلاعات برای [ '..data.id_..' ] :\nیوزرنیم : '..username..'\nنام : '..data.first_name_, 1)
+       return tdcli.sendMessage(arg.chat_id, 0, 1, '▪️اطلاعات براے [ '..data.id_..' ] :\n▫️یوزرنیم : '..username..'\n▪️نام : '..data.first_name_, 1)
       end
    end
  else
     if not lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_User not founded_", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_→Usᴇʀ Nᴏᴛ Fᴏᴜɴᴅ✘", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر یافت نشد✘_", 0, "md")
     end
   end
 else
     if lang then
-  return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر یافت نشد_", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "_←کاربر یافت نشد✘_", 0, "md")
    else
-  return tdcli.sendMessage(arg.chat_id, "", 0, "*User Not Found*", 0, "md")
+  return tdcli.sendMessage(arg.chat_id, "", 0, "*→Usᴇʀ Nᴏᴛ Fᴏᴜɴᴅ✘*", 0, "md")
       end
    end
 end
@@ -755,9 +755,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -786,7 +786,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -813,9 +813,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -842,9 +842,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -871,9 +871,9 @@ local function lock_mention(msg, data, target)
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -900,9 +900,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -929,9 +929,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -958,9 +958,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -987,9 +987,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1016,9 +1016,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -1045,9 +1045,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1074,9 +1074,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -1104,9 +1104,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1133,9 +1133,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end
 end 
 
@@ -1162,9 +1162,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1191,9 +1191,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -1220,9 +1220,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1249,9 +1249,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -1279,9 +1279,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1308,9 +1308,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -1337,9 +1337,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1366,9 +1366,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -1396,9 +1396,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- return "_You're Not_ *Moderator*"
+ return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
- return "شما مدیر گروه نمیباشید"
+ return "✘شما مُدیر گروه نیستی✘"
 end
 end
 
@@ -1425,9 +1425,9 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
  if not is_mod(msg) then
 if not lang then
-return "_You're Not_ *Moderator*"
+return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
-return "شما مدیر گروه نمیباشید"
+return "✘شما مُدیر گروه نیستی✘"
 end 
 end
 
@@ -1454,7 +1454,7 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not is_mod(msg) then
 if not lang then
- 	return "_You're Not_ *Moderator*"
+ 	return "_→Yᴏᴜ'ʀᴇ Nᴏᴛ_ ﹡Mᴏᴅᴇʀᴀᴛᴏʀ﹡✘"
 else
   return "✘شما مُدیر گروه نیستی✘"
 end
